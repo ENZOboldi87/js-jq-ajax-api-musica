@@ -4,7 +4,6 @@ $(document).ready(function() {
   $.ajax({
     url: 'https://flynn.boolean.careers/exercises/api/array/music',
     type: 'GET',
-    data: {'genre': 'Rock'},
     success: function (dischi) {
       var cds = dischi.response;
       showCd(cds);
